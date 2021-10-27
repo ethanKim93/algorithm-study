@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="559749c5-324f-469a-8457-d69b5f370c76" name="Default Changelist" comment="" />
+    <list default="true" id="cdfc960c-cd09-478a-a3e1-6ff61eea95fe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../10828_스택/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10828_스택/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../9093_단어 뒤집기/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../6603_로또/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../6603_로또/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,16 +18,16 @@
     <leaf>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/s1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/input.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -32,6 +38,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/input.txt" />
         <option value="$PROJECT_DIR$/s1.py" />
       </list>
     </option>
@@ -48,18 +55,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="6603_로또" type="b2602c69:ProjectViewProjectNode" />
-              <item name="6603_로또" type="462c0819:PsiDirectoryNode" />
+              <item name="9012_괄호" type="b2602c69:ProjectViewProjectNode" />
+              <item name="9012_괄호" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="RunDashboard">
@@ -76,7 +83,7 @@
   </component>
   <component name="RunManager">
     <configuration name="s1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="6603_로또" />
+      <module name="9012_괄호" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -107,11 +114,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="559749c5-324f-469a-8457-d69b5f370c76" name="Default Changelist" comment="" />
-      <created>1631012532763</created>
+      <changelist id="cdfc960c-cd09-478a-a3e1-6ff61eea95fe" name="Default Changelist" comment="" />
+      <created>1631427256601</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1631012532763</updated>
+      <updated>1631427256601</updated>
     </task>
     <servers />
   </component>
@@ -119,7 +126,7 @@
     <frame x="-7" y="1072" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
@@ -139,14 +146,14 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/input.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/s1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        <state relative-caret-position="96">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/s1.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
