@@ -3,7 +3,7 @@ sys.stdin = open("input.txt")
 
 
 import sys
-
+# 빠른 입출력 구현
 input = sys.stdin.readline
 
 N = int(input())
