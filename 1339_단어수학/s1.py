@@ -5,19 +5,21 @@ T = int(input())
 
 for tc in range(T):
     N = int(input())
-    data = []
+    datas = []
+    result = 0
     for _ in range(N):
-        data.append(input())
-    data.sort(key=len,reverse=True)
+        datas.append(input())
     num = [n for n in range(10)]
-    char_dic = {}
-    max_len = len(data[0])
-    idx = 0
-    while max_len:
-        cur = max_len - idx
-        for chars in data:
-            if len(chars) >= cur:
-                for c in chars:
-                    if c not in char_dic:
-                        char_dic[c]
-        idx += 1
+    data_dic = {}
+    for data in datas:
+        data_len = len(data)-1
+        for c in data:
+            if c in data_dic:
+                data_dic[c] += 10**data_len
+            else:
+                data_dic[c] = 10**data_len
+            data_len -= 1
+    data_dic = sorted(data_dic.items(),key=lambda x:x[1] , reverse=True)
+    for data in data_dic:
+        result += data[1]*num.pop(-1)
+    print(result)
