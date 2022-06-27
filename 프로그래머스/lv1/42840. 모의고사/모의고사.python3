@@ -1,0 +1,23 @@
+def solution(answers):
+    first = [1,2,3,4,5]
+    second = [2,1,2,3,2,4,2,5]
+    third = [3,3,1,1,2,2,4,4,5,5]
+    answer = []
+    
+    first_count, second_count,third_count= 0,0,0
+    for idx,a in enumerate(answers):
+        if first[idx%len(first)] == a:
+            first_count += 1
+        if second[idx%len(second)] == a:
+            second_count += 1
+        if third[idx%len(third)] == a:
+            third_count += 1
+    
+    max_count = max(first_count,second_count,third_count)
+    if max_count == first_count:
+        answer.append(1)
+    if max_count == second_count:
+        answer.append(2)
+    if max_count == third_count:
+        answer.append(3)
+    return answer
