@@ -1,0 +1,8 @@
+-- 코드를 입력하세요
+SELECT MIN(DATETIME) as "시간" 
+FROM ANIMAL_INS 
+
+# SELECT DATETIME as "시간" 
+# FROM ANIMAL_INS 
+# ORDER BY DATETIME 
+# lIMIT 1
