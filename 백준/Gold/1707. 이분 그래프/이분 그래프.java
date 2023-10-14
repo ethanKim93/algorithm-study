@@ -25,40 +25,37 @@ public class Main {
             arr[x].add(y);
             arr[y].add(x);
          }
-//         System.out.println(Arrays.toString(arr));
+
+         
          // 각 정점에서 모두 본다.
          String result = "YES";
          boolean flag = false;
-         int[] v = new int[V + 1];
+         int[] v = new int[V + 1];//모든 정점을 한번에 계산해야함. 이어져있지 않은 정점도!!
          for (int i = 1; i < V + 1; i++) {
             Queue<Integer> Q = new LinkedList<>();
             
-//            Q.add(i);
-//            v[i] = 1;
-            if(v[i] == 0) {
-               Q.add(i);
-               v[i] = 1;
+            if(v[i] == 0) {//시초방지
+                Q.add(i);
+                v[i] = 1;
             }
-//            System.out.println("ssss");
+            
             while (!Q.isEmpty()) {
                int p = Q.poll();
 
                for (int j = 0; j < arr[p].size(); j++) {
                   int num = (int) arr[p].get(j);
 
-                  if (v[num] == 0) {
-                     Q.add(num);
-                  }
-                  if (v[num] == v[p] && num!=p) {
-                     result = "NO";
-                     flag = true;
-                     break;
-                  }
-                  
-                  if(v[p] == 1 && v[num] == 0)
-                     v[num] = 2;
-                  else if(v[p] == 2 && v[num] == 0)
-                     v[num] = 1;
+                     if (v[num] == 0) {
+								  
+                       if(v[p]==1) v[num] =2;
+                        else v[num] = 1;
+                        
+                        Q.add(num);
+                      } else if (v[num] == v[p]  && num!=p) {
+                         result = "NO";
+                         flag = true;
+                         break;
+                      }
                }
                if(flag) break;
             }
