@@ -1,32 +1,32 @@
 class Solution {
+
+    int left, maxLen;
+
     public String longestPalindrome(String s) {
-        String answer = "";
-        for(int i = 0 ; i < s.length()  ; i ++){
-            for(int j = s.length()  ; j > i  ; j --){
-                String subString = s.substring(i,j);
-                if(isPalindrom(subString)){
-                    if(answer.length() <= subString.length()){
-                        answer =  subString;
-                    }
-                }
-            }    
+
+        int length = s.length();
+
+        if(length < 2) return s;
+        
+        for(int i = 0; i < length -1 ;i ++){
+            extendPalindrom(s,i,i+1);
+            extendPalindrom(s,i,i+2);
         }
-        return answer;
+
+        return s.substring(left,left + maxLen);
+
     }
 
-    private boolean isPalindrom(String s ){
+    private void extendPalindrom(String s,int i , int j){
 
-        int start = 0;
-        int end = s.length() -1 ;
-
-        while(start < end){
-            if(s.charAt(start) != s.charAt(end)){
-                return false;
-            }
-            start ++;
-            end --;
+        while(i >= 0 && s.length()> j && s.charAt(i) == s.charAt(j)){
+            i --;
+            j ++;
         }
-        return true;
-        
+
+        if(maxLen < j - i -1){
+            left = i + 1;
+            maxLen = j - i -1;
+        }
     }
 }
