@@ -1,3 +1,5 @@
 function solution(age) {
-    return 2022 - age + 1;
+    const nowYear = 2022;
+    var answer = nowYear - age + 1;
+    return answer;
 }
