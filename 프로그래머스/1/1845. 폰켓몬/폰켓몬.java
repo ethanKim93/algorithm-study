@@ -8,9 +8,7 @@ class Solution {
         for(int num : nums){
            pockets.add(num);
         }
-        
-        int answer = Math.min(nums.length / 2,pockets.size());
-        
-        return answer;
+                
+        return Math.min(nums.length / 2,pockets.size());
     }
 }
